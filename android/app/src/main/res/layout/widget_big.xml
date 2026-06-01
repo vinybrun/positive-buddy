@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Big (3x2..4x6): a pre-colored rounded card bitmap (big_bg) behind a
+     rendered header (buddy + progress bar) followed by a vertical list of
+     not-done habits, each with a Done button. Rows are added programmatically
+     in onUpdate; the launcher clips any overflow.
+
+     The card background is a BITMAP, not a tinted shape: on every launcher
+     re-inflation (which happens on each update) a tinted white shape can flash
+     white for one frame before the tint lands. A bitmap's only intermediate is
+     transparent (wallpaper), never white. Do NOT add a static/runtime-tinted
+     background to widget_root or widget_content. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/big_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/widget_big_desc"
+        android:scaleType="fitXY" />
+    <LinearLayout
+        android:id="@+id/widget_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/big_header"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:contentDescription="@string/widget_big_desc"
+            android:scaleType="fitXY" />
+        <LinearLayout
+            android:id="@+id/big_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+</FrameLayout>

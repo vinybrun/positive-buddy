@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Big: resizable 3x2 .. 4x6, fills whatever space it's given. -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="180dp"
+    android:minHeight="110dp"
+    android:minResizeWidth="180dp"
+    android:maxResizeWidth="280dp"
+    android:minResizeHeight="110dp"
+    android:maxResizeHeight="520dp"
+    android:targetCellWidth="3"
+    android:targetCellHeight="2"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    android:initialLayout="@layout/widget_big"
+    android:description="@string/widget_big_label"
+    android:previewImage="@drawable/preview_big"
+    android:updatePeriodMillis="0" />

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Small (2x1..4x1) + reused shape for any "single rendered bitmap"
+     widget. The entire buddy + progress bar is drawn into one bitmap sized
+     to the widget, so fitXY maps 1:1 with no distortion. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/widget_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/widget_small_desc"
+        android:scaleType="fitXY" />
+</FrameLayout>

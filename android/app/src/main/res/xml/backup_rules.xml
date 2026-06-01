@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Legacy auto-backup rules (Android < 12). Includes the Drift SQLite
+     database (which drift_flutter writes under the app's files dir, not
+     /databases/) plus any shared prefs. -->
+<full-backup-content>
+    <include domain="file" path="."/>
+    <include domain="database" path="."/>
+    <include domain="sharedpref" path="."/>
+</full-backup-content>

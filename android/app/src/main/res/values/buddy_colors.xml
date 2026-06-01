@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="buddy_fox_bg">#CC6B49</color>
+    <color name="buddy_cat_bg">#D06A8A</color>
+    <color name="buddy_dog_bg">#7A8F5C</color>
+    <color name="buddy_butterfly_bg">#5B8EAD</color>
+    <color name="buddy_snake_bg">#55805A</color>
+    <color name="buddy_bird_bg">#5B8EAD</color>
+</resources>

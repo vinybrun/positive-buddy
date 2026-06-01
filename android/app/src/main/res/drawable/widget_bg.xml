@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rounded card behind the big widget. Solid white so the provider can
+     tint it (API 31+) to the app's composed background color while keeping
+     the rounded corners; the white is the pre-31 light fallback. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFFFFFFF" />
+    <corners android:radius="20dp" />
+</shape>

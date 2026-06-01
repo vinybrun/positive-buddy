@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_tiny_label">Buddy — tiny (1×1)</string>
+    <string name="widget_small_label">Buddy — small (2×1 to 4×1)</string>
+    <string name="widget_big_label">Buddy — big (3×2 to 4×6)</string>
+    <string name="widget_small_desc">Today\'s habit progress</string>
+    <string name="widget_big_desc">Today\'s habit progress</string>
+    <string name="widget_tiny_desc">Today\'s habit progress ring</string>
+    <string name="widget_done">Done</string>
+    <string name="widget_all_done">All done for today 🎉</string>
+</resources>
